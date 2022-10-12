@@ -6,9 +6,9 @@ pub fn max_profit(prices: Vec<i32>) -> i32 {
     let mut max = 0.max(prices[1] - prices[0]);
     let mut min = prices[0];
 
-    for i in 1..prices.len() {
-        max = max.max(prices[i] - min);
-        min = min.min(prices[i]);
+    for price in prices.iter().skip(1) {
+        max = max.max(*price - min);
+        min = min.min(*price);
     }
 
     max

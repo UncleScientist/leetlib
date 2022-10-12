@@ -10,8 +10,7 @@ pub fn flood_fill(mut image: Vec<Vec<i32>>, sr: i32, sc: i32, color: i32) -> Vec
 
     image[sr as usize][sc as usize] = color;
 
-    let mut pos_list = Vec::new();
-    pos_list.push((sr, sc));
+    let mut pos_list = vec![(sr, sc)];
 
     while let Some(pos) = pos_list.pop() {
         let left = (pos.0, 0.max(pos.1 - 1));
