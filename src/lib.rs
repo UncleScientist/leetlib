@@ -18,3 +18,6 @@ pub use lc_0125_valid_palindrome::*;
 
 pub mod lc_0226_invert_binary_tree;
 pub use lc_0226_invert_binary_tree::*;
+
+pub mod lc_0242_valid_anagram;
+pub use lc_0242_valid_anagram::*;
