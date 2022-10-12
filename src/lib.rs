@@ -24,3 +24,6 @@ pub use lc_0242_valid_anagram::*;
 
 pub mod lc_0704_binary_search;
 pub use lc_0704_binary_search::*;
+
+pub mod lc_0733_flood_fill;
+pub use lc_0733_flood_fill::*;
