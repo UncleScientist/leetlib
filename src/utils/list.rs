@@ -20,6 +20,18 @@ impl ListNode {
 
         result
     }
+
+    pub fn into_array(&self) -> Vec<i32> {
+        let mut result = vec![self.val];
+
+        let mut head = &self.next;
+        while let Some(node) = head {
+            result.push(node.val);
+            head = &node.next;
+        }
+
+        result
+    }
 }
 
 #[cfg(test)]
@@ -36,5 +48,12 @@ mod test {
             n += 1;
             list = entry.next;
         }
+    }
+
+    #[test]
+    fn convert_back_to_array() {
+        let list = ListNode::from_vec(&vec![1, 2, 3, 4, 5]).unwrap();
+        let ary = list.into_array();
+        assert_eq!(ary, vec![1, 2, 3, 4, 5]);
     }
 }
