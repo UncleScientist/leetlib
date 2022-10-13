@@ -10,6 +10,9 @@ pub use lc_0020_valid_parentheses::*;
 pub mod lc_0021_merge_two_sorted_lists;
 pub use lc_0021_merge_two_sorted_lists::*;
 
+pub mod lc_0070_climbing_stairs;
+pub use lc_0070_climbing_stairs::*;
+
 pub mod lc_0110_balanced_binary_tree;
 pub use lc_0110_balanced_binary_tree::*;
 
