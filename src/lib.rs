@@ -40,6 +40,9 @@ pub use lc_0278_first_bad_version::*;
 pub mod lc_0383_ransom_note;
 pub use lc_0383_ransom_note::*;
 
+pub mod lc_0409_longest_palindrome;
+pub use lc_0409_longest_palindrome::*;
+
 pub mod lc_0704_binary_search;
 pub use lc_0704_binary_search::*;
 
