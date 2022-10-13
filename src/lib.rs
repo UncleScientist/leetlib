@@ -31,6 +31,9 @@ pub use lc_0235_lowest_common_ancestor_of_a_binary_search_tree::*;
 pub mod lc_0242_valid_anagram;
 pub use lc_0242_valid_anagram::*;
 
+pub mod lc_0278_first_bad_version;
+pub use lc_0278_first_bad_version::*;
+
 pub mod lc_0704_binary_search;
 pub use lc_0704_binary_search::*;
 
