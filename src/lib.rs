@@ -60,3 +60,6 @@ pub use lc_0704_binary_search::*;
 
 pub mod lc_0733_flood_fill;
 pub use lc_0733_flood_fill::*;
+
+pub mod lc_0876_middle_of_the_linked_list;
+pub use lc_0876_middle_of_the_linked_list::*;
