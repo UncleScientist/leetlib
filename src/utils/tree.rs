@@ -1,3 +1,5 @@
+use std::fmt::{Display, Formatter};
+
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -65,6 +67,28 @@ impl TreeNode {
 
         if let Some(right) = &self.right {
             right.borrow().walk(result);
+        }
+    }
+}
+
+impl Display for TreeNode {
+    fn fmt(&self, f: &mut Formatter) -> std::fmt::Result {
+        if self.val == i32::MIN {
+            Ok(())
+        } else {
+            let left = if let Some(left) = &self.left {
+                left.borrow().fmt(f)?;
+                format!("{}", left.borrow().val)
+            } else {
+                "-".to_string()
+            };
+            let right = if let Some(right) = &self.right {
+                right.borrow().fmt(f)?;
+                format!("{}", right.borrow().val)
+            } else {
+                "-".to_string()
+            };
+            writeln!(f, "{}, left = {left}, right = {right}", self.val)
         }
     }
 }

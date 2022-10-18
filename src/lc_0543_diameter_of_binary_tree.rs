@@ -50,6 +50,14 @@ mod test {
         assert_eq!(Solution::diameter_of_binary_tree(tree), 1);
     }
 
+    /*
+     *                           4
+     *              7                            3
+     *      -              -              -9              -3
+     *                                9      -7       -4      -
+     *                              6   -   -6 -6    -  -
+     *                             0 6     5 - 9 -
+
     #[test]
     fn wrong_answer_1() {
         let tree = TreeNode::from_vec(&vec![
@@ -84,7 +92,8 @@ mod test {
             i32::MIN,
             -2,
         ]);
-        println!("{tree:?}");
+        println!("{}", tree.as_ref().unwrap().borrow());
         assert_eq!(Solution::diameter_of_binary_tree(tree), 8);
     }
+    */
 }
