@@ -22,6 +22,9 @@ pub use lc_0121_best_time_to_buy_and_sell_stock::*;
 pub mod lc_0125_valid_palindrome;
 pub use lc_0125_valid_palindrome::*;
 
+pub mod lc_0169_majority_element;
+pub use lc_0169_majority_element::*;
+
 pub mod lc_0206_reverse_linked_list;
 pub use lc_0206_reverse_linked_list::*;
 
