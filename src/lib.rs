@@ -52,6 +52,9 @@ pub use lc_0383_ransom_note::*;
 pub mod lc_0409_longest_palindrome;
 pub use lc_0409_longest_palindrome::*;
 
+pub mod lc_0543_diameter_of_binary_tree;
+pub use lc_0543_diameter_of_binary_tree::*;
+
 pub mod lc_0704_binary_search;
 pub use lc_0704_binary_search::*;
 
