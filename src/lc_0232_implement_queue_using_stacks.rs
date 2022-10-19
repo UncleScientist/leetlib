@@ -1,3 +1,4 @@
+#[derive(Default)]
 pub struct MyQueue {
     stack1: Vec<i32>,
     stack2: Vec<i32>,
