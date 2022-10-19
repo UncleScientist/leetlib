@@ -39,15 +39,15 @@ impl Solution {
                     Some((row, col + 1))
                 };
 
-                let mut min = max;
-                for dir in [up, down, left, right].iter().filter_map(|&x| x) {
-                    min = min.min(output[dir.0][dir.1]);
-                }
-                min += 1;
+                let valid = [up, down, left, right]
+                    .iter()
+                    .filter_map(|&x| x)
+                    .collect::<Vec<(usize, usize)>>();
+                let min = 1 + valid.iter().fold(max, |a, b| a.min(output[b.0][b.1]));
 
                 if min < output[row][col] {
                     output[row][col] = min;
-                    for dir in [up, down, left, right].iter().filter_map(|&x| x) {
+                    for dir in valid {
                         hs.insert(dir);
                     }
                 }
