@@ -43,6 +43,9 @@ pub use lc_0121_best_time_to_buy_and_sell_stock::*;
 pub mod lc_0125_valid_palindrome;
 pub use lc_0125_valid_palindrome::*;
 
+pub mod lc_0150_evaluate_reverse_polish_notation;
+pub use lc_0150_evaluate_reverse_polish_notation::*;
+
 pub mod lc_0169_majority_element;
 pub use lc_0169_majority_element::*;
 
