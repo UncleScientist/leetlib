@@ -7,6 +7,9 @@ pub use lc_0001_two_sum::*;
 pub mod lc_0003_longest_substring_without_repeating_characters;
 pub use lc_0003_longest_substring_without_repeating_characters::*;
 
+pub mod lc_0015_3sum;
+pub use lc_0015_3sum::*;
+
 pub mod lc_0020_valid_parentheses;
 pub use lc_0020_valid_parentheses::*;
 
