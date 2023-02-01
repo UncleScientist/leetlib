@@ -55,6 +55,9 @@ pub use lc_0206_reverse_linked_list::*;
 pub mod lc_0207_course_schedule;
 pub use lc_0207_course_schedule::*;
 
+pub mod lc_0208_implement_trie;
+pub use lc_0208_implement_trie::*;
+
 pub mod lc_0217_contains_duplicate;
 pub use lc_0217_contains_duplicate::*;
 
