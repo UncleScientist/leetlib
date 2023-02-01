@@ -70,6 +70,9 @@ pub use lc_0232_implement_queue_using_stacks::*;
 pub mod lc_0235_lowest_common_ancestor_of_a_binary_search_tree;
 pub use lc_0235_lowest_common_ancestor_of_a_binary_search_tree::*;
 
+pub mod lc_0238_product_of_array_except_self;
+pub use lc_0238_product_of_array_except_self::*;
+
 pub mod lc_0242_valid_anagram;
 pub use lc_0242_valid_anagram::*;
 
