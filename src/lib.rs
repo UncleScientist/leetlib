@@ -79,6 +79,9 @@ pub use lc_0242_valid_anagram::*;
 pub mod lc_0278_first_bad_version;
 pub use lc_0278_first_bad_version::*;
 
+pub mod lc_0322_coin_change;
+pub use lc_0322_coin_change::*;
+
 pub mod lc_0383_ransom_note;
 pub use lc_0383_ransom_note::*;
 
