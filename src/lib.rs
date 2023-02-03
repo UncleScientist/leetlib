@@ -46,6 +46,9 @@ pub use lc_0125_valid_palindrome::*;
 pub mod lc_0150_evaluate_reverse_polish_notation;
 pub use lc_0150_evaluate_reverse_polish_notation::*;
 
+pub mod lc_0155_min_stack;
+pub use lc_0155_min_stack::*;
+
 pub mod lc_0169_majority_element;
 pub use lc_0169_majority_element::*;
 
