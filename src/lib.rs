@@ -55,6 +55,9 @@ pub use lc_0155_min_stack::*;
 pub mod lc_0169_majority_element;
 pub use lc_0169_majority_element::*;
 
+pub mod lc_0200_number_of_islands;
+pub use lc_0200_number_of_islands::*;
+
 pub mod lc_0206_reverse_linked_list;
 pub use lc_0206_reverse_linked_list::*;
 
