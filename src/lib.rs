@@ -114,3 +114,6 @@ pub use lc_0876_middle_of_the_linked_list::*;
 
 pub mod lc_0973_k_closest_points_to_origin;
 pub use lc_0973_k_closest_points_to_origin::*;
+
+pub mod lc_0994_rotting_oranges;
+pub use lc_0994_rotting_oranges::*;
