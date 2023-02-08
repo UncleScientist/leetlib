@@ -1,9 +1,8 @@
 pub struct Solution;
 
 impl Solution {
-    pub fn oranges_rotting(grid: Vec<Vec<i32>>) -> i32 {
+    pub fn oranges_rotting(mut grid: Vec<Vec<i32>>) -> i32 {
         let mut minutes = 0;
-        let mut next = grid;
 
         let mut changed = true;
         let mut finished = true;
@@ -13,15 +12,15 @@ impl Solution {
             finished = true;
             minutes += 1;
 
-            let mut step = vec![vec![-1; next[0].len()]; next.len()];
-            for (row, line) in next.iter().enumerate() {
+            let mut step = vec![vec![-1; grid[0].len()]; grid.len()];
+            for (row, line) in grid.iter().enumerate() {
                 for (col, ch) in line.iter().enumerate() {
                     if *ch == 2 || *ch == 0 {
                         step[row][col] = *ch;
-                    } else if row > 0 && next[row - 1][col] == 2
-                        || (row < next.len() - 1) && next[row + 1][col] == 2
-                        || (col > 0) && next[row][col - 1] == 2
-                        || (col < next[0].len() - 1) && next[row][col + 1] == 2
+                    } else if row > 0 && grid[row - 1][col] == 2
+                        || (row < grid.len() - 1) && grid[row + 1][col] == 2
+                        || (col > 0) && grid[row][col - 1] == 2
+                        || (col < grid[0].len() - 1) && grid[row][col + 1] == 2
                     {
                         step[row][col] = 2;
                         changed = true;
@@ -32,7 +31,7 @@ impl Solution {
                 }
             }
 
-            next = step;
+            grid = step;
         }
 
         if !finished {
