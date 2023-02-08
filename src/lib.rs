@@ -16,6 +16,9 @@ pub use lc_0020_valid_parentheses::*;
 pub mod lc_0021_merge_two_sorted_lists;
 pub use lc_0021_merge_two_sorted_lists::*;
 
+pub mod lc_0033_search_in_rotated_sorted_array;
+pub use lc_0033_search_in_rotated_sorted_array::*;
+
 pub mod lc_0053_maximum_subarray;
 pub use lc_0053_maximum_subarray::*;
 
