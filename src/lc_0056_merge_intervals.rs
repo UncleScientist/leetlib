@@ -1,9 +1,9 @@
 pub struct Solution;
 
 impl Solution {
-    pub fn merge(intervals: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
+    pub fn merge(mut intervals: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
         let mut result = Vec::new();
-        let mut intervals = intervals.clone();
+
         intervals.sort_by(|a, b| {
             if a[0] == b[0] {
                 b[1].cmp(&a[1])
@@ -18,7 +18,7 @@ impl Solution {
             let mut start = pair[0];
             let mut end = pair[1];
 
-            while let Some(pair) = iter.next() {
+            for pair in iter {
                 if end < pair[0] {
                     result.push(vec![start, end]);
                     start = pair[0];
