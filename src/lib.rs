@@ -28,6 +28,9 @@ pub use lc_0046_permutations::*;
 pub mod lc_0053_maximum_subarray;
 pub use lc_0053_maximum_subarray::*;
 
+pub mod lc_0056_merge_intervals;
+pub use lc_0056_merge_intervals::*;
+
 pub mod lc_0057_insert_interval;
 pub use lc_0057_insert_interval::*;
 
