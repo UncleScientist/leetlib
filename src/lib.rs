@@ -121,6 +121,9 @@ pub use lc_0543_diameter_of_binary_tree::*;
 pub mod lc_0704_binary_search;
 pub use lc_0704_binary_search::*;
 
+pub mod lc_0721_accounts_merge;
+pub use lc_0721_accounts_merge::*;
+
 pub mod lc_0733_flood_fill;
 pub use lc_0733_flood_fill::*;
 
