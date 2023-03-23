@@ -40,6 +40,9 @@ pub use lc_0067_add_binary::*;
 pub mod lc_0070_climbing_stairs;
 pub use lc_0070_climbing_stairs::*;
 
+pub mod lc_0075_sort_colors;
+pub use lc_0075_sort_colors::*;
+
 pub mod lc_0098_validate_binary_search_tree;
 pub use lc_0098_validate_binary_search_tree::*;
 
