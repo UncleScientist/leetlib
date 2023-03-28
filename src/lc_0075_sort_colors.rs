@@ -28,7 +28,7 @@ impl Solution {
         }
     }
 
-    pub fn _sort_colors(nums: &mut Vec<i32>) {
+    pub fn _sort_colors(nums: &mut [i32]) {
         let mut count = [0, 0, 0];
         for n in nums.iter() {
             count[*n as usize] += 1;
